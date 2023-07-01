@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        *{
+            border: 0;
+            padding: 0;
+        }
+        /* Styles for the left panel */
+        .left-panel {
+            width: 200px;
+            height: 100vh;
+            background-color: #f2f2f2;
+            float: left;
+        }
+
+        .left-panel a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Styles for the content section */
+        .content {
+            margin-left: 200px;
+            /* Same as the width of the left panel */
+            padding: 20px;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        /* Styles for the different components */
+        #home-content {
+            display: block;
+        }
+
+        #contact-content,
+        #information-content,
+        #guide-content {
+            display: fixed;
+        }
+
+        /* Styles for the content of each component */
+        .component-content {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left-panel">
+        <!-- Links for different components -->
+        <a href="#home-content">Home</a>
+        <a href="#contact-content">Contact</a>
+        <a href="#information-content">Information</a>
+        <a href="#guide-content">Guide</a>
+    </div>
+
+    <!-- Links for different components with target attribute set to "_blank" to open in new tab -->
+    <!--
+                <a href="home.html" target="_blank">Home</a>
+                <a href="contact.html" target="_blank">Contact</a>
+                <a href="information.html" target="_blank">Information</a>
+                <a href="guide.html" target="_blank">Guide</a>
+-->
+
+    <div class="content" >
+        <!-- Content for different components -->
+        <div id="home-content" class="component-content">
+            <h1>Welcome to Home</h1>
+            <p>This is the home page content.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illo. Eius veniam autem ullam cum, aliquam vero architecto iure quo eveniet perferendis expedita voluptatem sapiente rerum reiciendis natus repudiandae
+                omnis. ores nesciunt culpa nulla repudiandae commodi consequatur, eveniet dolorum pariatur quae possimus
+                reiciendis quisquam quos, nisi id corporis iste eum mollitia? Ad dolores beatae quos laudantium?
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illo. Eius veniam autem ullam cum, aliquam vero architecto iure quo eveniet perferendis expedita voluptatem sapiente rerum reiciendis natus repudiandae
+                omnis. ores nesciunt culpa nulla repudiandae commodi consequatur, eveniet dolorum pariatur quae possimus
+                reiciendis quisquam quos, nisi id corporis iste eum mollitia? Ad dolores beatae quos laudantium?
+            </p>
+        </div>
+
+        <div id="contact-content" class="component-content">
+            <h1>Contact Information</h1>
+            <p>This is the contact page content.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illo. Eius veniam autem ullam cum, aliquam vero architecto iure quo eveniet perferendis expedita voluptatem sapiente rerum reiciendis natus repudiandae
+                omnis. ores nesciunt culpa nulla repudiandae commodi consequatur, eveniet dolorum pariatur quae possimus
+                reiciendis quisquam quos, nisi id corporis iste eum mollitia? Ad dolores beatae quos laudantium?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illo. Eius veniam autem ullam cum, aliquam vero architecto iure quo eveniet perferendis expedita voluptatem sapiente rerum reiciendis natus repudiandae
+                omnis. ores nesciunt culpa nulla repudiandae commodi consequatur, eveniet dolorum pariatur quae possimus
+                reiciendis quisquam quos, nisi id corporis iste eum mollitia? Ad dolores beatae quos laudantium?
+            </p>
+        </div>
+
+        <div id="information-content" class="component-content">
+            <h1>Information</h1>
+            <p>This is the information page content. This Tables is added just to make the use of given task more clearly.</p>
+            <div class="content">
+                <h1 style="color:rgb(6, 206, 6);    ;" id="BOOKS">TABLE OF BOOKS</h1>
+
+                <table class="div-first">
+                    <thead style="text-align:center;"">
+                        <tr >
+                            <th><b><i> <center>Book ID</center></i></b></th>
+                            <th><b><i><center>Title</center></i></b></th>
+                            <th><b><i><center>Author</center></i></b></th>
+                            <th><b><i><center>Genre</center></i></b></th>
+                            <th><b><i><center>Availability</center></i></b></th>
+                        </tr>
+                    </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><span class=" title"> Lakewood</span>
+                        <table class="undertr">
+                            <tr>
+                                <td>Publication Date: 2000</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:250</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN :123-4567890123</td>
+                            </tr>
+                        </table>
+                        </td>
+
+                        <td>Megan Giddings</td>
+                        <td>Thriller</td>
+                        <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><span class="title">Homegoing</span>
+                                <table class="undertr">
+
+                                    <tr>
+                                        <td>Publication Date: 2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count:250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN :123-4567890123</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>YAA GYASI</td>
+                            <td>Histrorical fication</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><span class="title">She Who Became The Sun</span>
+                                <table class="undertr">
+                                    <tr>
+                                        <td>Publication Date: 2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count:250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN :123-4567890123</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>Chan</td>
+                            <td>Fantasy</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><span class="title">Salem's lot</span>
+                                <table class="undertr">
+                                    <tr>
+                                        <td>Publication Date: 2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count:250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN :123-4567890123</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td> S. KING</td>
+                            <td>Horror</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><span class="title">Everything I Never Told You </span>
+                                <table class="undertr">
+                                    <tr>
+                                        <td>Publication Date: 2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Page Count:250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISBN :123-4567890123</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>Celeste Ng</td>
+                            <td>Novel</td>
+                            <td>Available</td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="guide-content" class="component-content">
+            <h1>Guide</h1>
+            <p>This is the guide page content.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illo. Eius veniam autem ullam cum, aliquam vero architecto iure quo eveniet perferendis expedita voluptatem sapiente rerum reiciendis natus repudiandae
+                omnis. ores nesciunt culpa nulla repudiandae commodi consequatur, eveniet dolorum pariatur quae possimus
+                reiciendis quisquam quos, nisi id corporis iste eum mollitia? Ad dolores beatae quos laudantium?
+            </p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, illo. Eius veniam autem ullam cum, aliquam vero architecto iure quo eveniet perferendis expedita voluptatem sapiente rerum reiciendis natus repudiandae
+                omnis. ores nesciunt culpa nulla repudiandae commodi consequatur, eveniet dolorum pariatur quae possimus
+                reiciendis quisquam quos, nisi id corporis iste eum mollitia? Ad dolores beatae quos laudantium?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
